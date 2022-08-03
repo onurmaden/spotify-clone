@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body,
+	#root {
+		@apply h-full bg-backdrop text-white antialiased;
+	}
+	#root {
+		@apply flex flex-col;
+	}
+	#container {
+		height: calc(100% - theme("spacing.90"));
+		@apply flex;
+	}
+	#menu li a {
+		@apply h-10 items-center flex text-sm text-link hover:text-white px-4 rounded font-semibold gap-x-4;
+	}
+	.active {
+		@apply bg-highlighted text-white;
+	}
+	.active span {
+		@apply text-white;
+	}
+	.cly {
+		@apply mt-6 text-link font-semibold;
+	}
+	.cly li {
+	}
+	.cly li a {
+		@apply flex items-center px-4 py-2 text-sm gap-x-4;
+	}
+	.cly li a span {
+		@apply rounded-sm flex items-center justify-center w-6 h-6;
+	}
+}
