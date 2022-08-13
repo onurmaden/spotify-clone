@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "components/Section";
-// import UserData from "components/UserData";
+import UserData from "components/UserData";
 import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
 
 const Home = () => {
@@ -45,17 +45,18 @@ const Home = () => {
         items={items}
       />
       <Section 
-        title="Recently played"
+        title="Made for "
+        data={UserData.name}
         more="/"
         items={items}
       />
       <Section 
-        title="Recently played"
+        title="Shows you might like"
         more="/"
         items={items}
       />
       <Section 
-        title="Recently played"
+        title="Recommended for today"
         more="/"
         items={items}
       />
