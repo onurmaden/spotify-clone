@@ -2,8 +2,6 @@ import React from 'react'
 import { Icon } from '../../Icons'
 import { useNavigate } from "react-router-dom"
 
-    
-
 const Navigation = () => {
     
     const navigate = useNavigate();

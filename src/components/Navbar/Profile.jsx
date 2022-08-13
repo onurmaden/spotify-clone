@@ -1,15 +1,11 @@
 import React from "react";
 import { Menu } from "@headlessui/react";
 import { Icon } from "Icons";
-
+import UserData from "../UserData"
 function Profile() {
-	const user = {
-		name: "onurmaden",
-		pp: "https://media-exp1.licdn.com/dms/image/C4D03AQFoBtPKF7hgdA/profile-displayphoto-shrink_800_800/0/1659296346863?e=1665619200&v=beta&t=eAotN-iHiTsA3NdV4vtCnVOJRTNspps45YApGMLg0oA",
-	};
 
 	return (
-		<Menu as={"nav"} className="relative">
+		<Menu as={"nav"} className="relative z-50">
 			{({ open }) => (
 				<>
 					<Menu.Button
@@ -17,8 +13,8 @@ function Profile() {
 							open ? "bg-highlighted" : "bg-black"
 						}`}
 					>
-						<img src={user.pp} className={"w-8 h-8 p-px mr-1 rounded-full"} alt="" />
-						<span className="text-sm font-semibold mr-2">{user.name}</span>
+						<img src={UserData.pp} className={"w-8 h-8 p-px mr-1 rounded-full"} alt="" />
+						<span className="text-sm font-semibold mr-2">{UserData.name}</span>
 						<span className={open && "rotate-180"}>
 							<Icon size={16} name="downdir" />
 						</span>

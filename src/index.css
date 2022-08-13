@@ -18,10 +18,10 @@
 	#menu li a {
 		@apply h-10 items-center flex text-sm text-link hover:text-white px-4 rounded font-semibold gap-x-4;
 	}
-	.active {
+	nav ul li .active {
 		@apply bg-highlighted text-white;
 	}
-	.active span {
+	nav ul li .active span {
 		@apply text-white;
 	}
 	.cly {
