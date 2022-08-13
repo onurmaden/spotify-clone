@@ -209,6 +209,7 @@ const Icon = ({ name, size = 24, color = "currentColor" }) => {
 		prev: PrevIcon,
 		next: NextIcon,
 		downdir: DownDirIcon,
+		external: ExternalIcon,
 	};
 
 	const Component = icons[name];
